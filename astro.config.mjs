@@ -10,7 +10,7 @@
 export default /** @type {import('astro').AstroUserConfig} */ ({
 	// Comment out "renderers: []" to enable Astro's default component support.
 	buildOptions: {
-  	  site: 'https://woka-website-astro-build.onrender.com',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+  	    // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
     	sitemap: true,         // Generate sitemap (set to "false" to disable)
   	},
   	devOptions: {
