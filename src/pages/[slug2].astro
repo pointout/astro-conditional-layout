@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+export async function getStaticPaths() {
+    return [
+        { params: { slug2:'page1' }, props: { Prop1:'Page1' } },
+        { params: { slug2:'page2' }, props: { Prop2:'Page2' } }
+    ]
+}
+const {Prop1, Prop2} = Astro.props
+---
+<BaseLayout title={`${Prop1 != null ? Prop1 : ''}${Prop2 != null ? Prop2 : ''}`}>
+    <h1>{`${Prop1 != null ? Prop1 : ''}${Prop2 != null ? Prop2 : ''}`}</h1>
+</BaseLayout>
