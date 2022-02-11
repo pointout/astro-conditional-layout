@@ -7,7 +7,7 @@ export async function getStaticPaths() {
         { params: { slug:'page2' }, props: { Prop2:'Page2' } }
     ]
 }
-const {Prop1, Prop2} = Astro.props
+const {Prop1 = "", Prop2 = ""} = Astro.props
 ---
 { Prop1 &&
 <BaseLayout title={Prop1}>
